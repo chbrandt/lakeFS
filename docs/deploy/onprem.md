@@ -80,7 +80,7 @@ Connect to your host using SSH:
    tls:
      enabled: true
      cert_file: server.crt   # provide path to your certificate file
-     key_file: server.key    # provide paht to your server private key
+     key_file: server.key    # provide path to your server private key
    ```
 
 1. [Download the binary](../index.md#downloads) to the server.
