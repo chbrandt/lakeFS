@@ -76,6 +76,11 @@ type S3AuthInfo struct {
 // do that.
 type Config struct {
 	ListenAddress string `mapstructure:"listen_address"`
+	TLS           struct {
+		Enabled  bool   `mapstructure:"enabled"`
+		CertFile string `mapstructure:"cert_file"`
+		KeyFile  string `mapstructure:"key_file"`
+	} `mapstructure:"tls"`
 
 	Actions struct {
 		// ActionsEnabled set to false will block any hook execution
