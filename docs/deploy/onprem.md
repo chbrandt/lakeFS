@@ -74,8 +74,7 @@ Connect to your host using SSH:
    ⚠️ Notice that the lakeFS Blockstore type is set to `s3` - This configuration works with S3-compatible storage engines such as [MinIO](https://min.io/){: target="blank" }.
    {: .note }
 
-1. In the case the TLS/SSL termination is not done by your infrastrure's load balancer or cluster manager.
-   lakeFS can be configure to listen and serve HTTPS by adding the following to the configuration:
+1. Whenever TLS/SSL is not terminated by your cluster manager or load balancer, add the following configuration to lakeFS to listen and serve HTTPS:
 
    ```yaml
    tls:
